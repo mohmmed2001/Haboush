@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(70deg, #ae4aff, #0000da);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.login .photo {
+    background: linear-gradient(70deg, #ae4aff, #0000da);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.login .photo img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.login .form {
+    padding: 10px;
+    width: 300px;
+}
+
+.login .form form .maintitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login .form form .maintitle h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login .form form .maintitle p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login .form form div {
+    margin-bottom: 20px;
+}
+
+.login .form form input {
+    border: none;
+    padding: 10px 0;
+    border-bottom: 2px solid #ae4aff;
+    width: 100%;
+    outline: none;
+}
+
+.login .form form ::placeholder {
+    padding: 10px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.login .form form .btn {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(70deg, #ae4aff, #0000da);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.countentUs {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.countentUs p {
+    margin-bottom: 5px;
+}
+
+.countentUs a {
+    text-decoration: none;
+    color: #d400ff;
+}
+
+@media(max-width:699px) {
+    .login {
+        width: 300px;
+        margin: auto;
+    }
+
+    .form .photo {
+        border-radius: 0px;
+    }
+
+    .countentUs {
+        position: absolute;
+        bottom: -30px;
+        right: 35px;
+    }
+
+    .login .photo {
+        background: linear-gradient(70deg, #ae4aff, #0000da);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+}
